@@ -38,3 +38,31 @@ article {
     width: 400px;
 }
 
+.box_header {
+  ul.list_header {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    // border: 10px, solid, variable.$white;
+  }
+}
+
+   > li {
+      }
+
+
+    $classNames: 'purple', 'orange', 'blue';
+    $buttonColor: #a9004b, #ff863f, #0000ff;
+
+    @each $変数classNames in $classNames {
+      $i: index($classNames, $変数classNames);
+
+          .#{$変数classNames} {
+            p.little_box {
+              background-color: nth($buttonColor, $i);
+          }
+            p.large_box {
+              background-color: nth($buttonColor, $i);
+          }
+        }
+      }
