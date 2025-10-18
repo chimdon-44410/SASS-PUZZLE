@@ -1,0 +1,34 @@
+@use 'variable';
+@use 'mixin';
+
+.header {
+    color: transparent;
+    background-color: variable.$navy;
+    height: 100px;
+    width: 400px
+}
+
+.side {
+    color: transparent;
+    background-color: variable.$green;
+    height: 250px;
+    width: 150px;
+}
+
+.main {
+    color: transparent;
+    background-color: variable.$red;
+    height: 250px;
+    width: 250px;
+}
+
+article {
+     display:flex;
+}
+
+.footer {
+    color: transparent;
+    background-color: variable.$brown;
+    height: 100px;
+    width: 400px;
+}
