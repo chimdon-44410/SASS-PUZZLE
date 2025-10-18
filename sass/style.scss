@@ -1,11 +1,15 @@
 @use 'variable';
 @use 'mixin';
 
+p {
+  margin: 0;
+}
+
 .header {
     color: transparent;
     background-color: variable.$navy;
     height: 100px;
-    width: 400px
+    width: 400px;
 }
 
 .side {
@@ -24,6 +28,7 @@
 
 article {
      display:flex;
+     width: 400px;
 }
 
 .footer {
