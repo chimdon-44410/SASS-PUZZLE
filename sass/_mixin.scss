@@ -1,9 +1,9 @@
 @use 'variable';
 
-@mixin btn($weidth, $borderSize: 1px, $borderColor: variable.$white) {
+@mixin btn($weidth, $height, $borderSize: 1px, $borderColor: variable.$white) {
   display: flex;
   width: $weidth;
-  height: 40px;
+  height: $height;
   cursor: pointer;
   border: $borderSize solid $borderColor;
   }
