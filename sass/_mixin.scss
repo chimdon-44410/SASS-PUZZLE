@@ -5,16 +5,18 @@
   width: $weidth;
   height: $height;
   cursor: pointer;
-  background-color:  #fff;
+  // background-color:  #fff;
   }
 
 .little_box {
-  @include btn(60px,60px, flex);
+  // @include btn(60px,60px, flex);
+  @include btn(40px,40px, flex);
   border: 10px solid variable.$white;
 }
 
 .large_box {
-  @include btn(50px,150px, flex);
+  // @include btn(50px,150px, flex);
+  @include btn(40px,140px, flex);
   border: 5px solid variable.$white;
 }
 
