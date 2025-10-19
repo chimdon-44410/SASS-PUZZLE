@@ -4,12 +4,10 @@
   display: $display;
   width: $weidth;
   height: 40px;
-  // color: transparent;
-  margin: 20px;
+  // margin: 20px;
   cursor: pointer;
   background-color:  #fff;
   }
-
 
 .little_box {
   @include btn(40px, flex);
