@@ -1,23 +1,19 @@
 @use 'variable';
 
-@mixin btn($height,$weidth, $display) {
-  display: $display;
+@mixin btn($weidth, $borderSize: 1px, $borderColor: variable.$white) {
+  display: flex;
   width: $weidth;
-  height: $height;
+  height: 40px;
   cursor: pointer;
-  // background-color:  #fff;
+  border: $borderSize solid $borderColor;
   }
 
 .little_box {
-  // @include btn(60px,60px, flex);
-  @include btn(40px,40px, flex);
-  border: 10px solid variable.$white;
+  @include btn(40px,10px);
 }
 
 .large_box {
-  // @include btn(50px,150px, flex);
-  @include btn(40px,140px, flex);
-  border: 5px solid variable.$white;
+  @include btn(140px, 5px);
 }
 
 

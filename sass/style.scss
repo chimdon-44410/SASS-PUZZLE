@@ -1,9 +1,6 @@
 @use 'variable';
 @use 'mixin';
 
-// * {
-//   box-sizing: border-box;
-// }
 p {
   margin: 0;
 }
@@ -19,17 +16,6 @@ p {
 .list_header {
   display: flex;
 }
-
-// .absolute {
-//     position: relative;
-//     bottom: 20px;
-//     right: px;
-// }
-
-// .absolute {
-//     position: absolute;
-//     // right: 340px;
-// }
 
 .side {
     color: transparent;
