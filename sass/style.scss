@@ -7,7 +7,6 @@ p {
 
 .header {
     position: relative;
-    color: variable.$color-text;
     background-color: variable.$navy;
     height: 100px;
     width: 400px;
@@ -18,7 +17,6 @@ p {
 }
 
 .side {
-    color: variable.$color-text;
     background-color: variable.$green;
     height: 250px;
     width: 150px;
@@ -26,7 +24,6 @@ p {
 
 .box_main {
     position: relative;
-    color: variable.$color-text;
     background-color: variable.$red;
     height: 250px;
     width: 250px;
@@ -38,7 +35,6 @@ article {
 }
 
 .footer {
-    color: variable.$color-text;
     background-color: variable.$brown;
     height: 100px;
     width: 400px;
