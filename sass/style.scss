@@ -10,11 +10,14 @@ p {
     background-color: variable.$navy;
     height: 100px;
     width: 400px;
+
+    &_list {
+  display: flex;
+  }
+
 }
 
-.list_header {
-  display: flex;
-}
+
 
 .side {
     background-color: variable.$green;
@@ -35,12 +38,13 @@ article {
 }
 
 .footer {
+
     background-color: variable.$brown;
     height: 100px;
     width: 400px;
 }
 
-  ul.list_header {
+  ul.header_list {
     position: absolute;
     top: 20px;
     right: 20px;
