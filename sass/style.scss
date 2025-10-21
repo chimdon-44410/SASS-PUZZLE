@@ -1,0 +1,89 @@
+@use 'variable';
+@use 'mixin';
+
+p {
+  margin: 0;
+}
+
+.header {
+    position: relative;
+    background-color: variable.$navy;
+    height: 100px;
+    width: 400px;
+
+    &_list {
+  display: flex;
+  }
+
+}
+
+
+
+.side {
+    background-color: variable.$green;
+    height: 250px;
+    width: 150px;
+}
+
+.box_main {
+    position: relative;
+    background-color: variable.$red;
+    height: 250px;
+    width: 250px;
+}
+
+article {
+     display:flex;
+     width: 400px;
+}
+
+.footer {
+
+    background-color: variable.$brown;
+    height: 100px;
+    width: 400px;
+}
+
+  ul.header_list {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul.list_main {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  $classNames: 'purple', 'orange', 'blue';
+
+  @each $colorNames in $classNames {
+    $i: index($classNames, $colorNames);
+
+        .#{$colorNames} {
+          p.little_box {
+            @include mixin.btn(40px, 40px, 10px, variable.$white);
+            background-color: nth(variable.$buttonColor, $i);
+
+            @if $colorNames == 'orange' {
+              border-left: none;
+              border-right: none;
+            }
+        }
+          p.large_box {
+            @include mixin.btn(140px, 40px, 5px, variable.$white);
+            background-color: nth(variable.$buttonColor, $i);
+        }
+    }
+  }

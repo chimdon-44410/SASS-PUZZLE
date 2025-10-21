@@ -1,0 +1,19 @@
+@use 'variable';
+
+@mixin btn($weidth, $height, $borderSize: 1px, $borderColor: variable.$white) {
+  display: flex;
+  width: $weidth;
+  height: $height;
+  cursor: pointer;
+  border: $borderSize solid $borderColor;
+  }
+
+.little_box {
+  @include btn(40px,10px);
+}
+
+.large_box {
+  @include btn(140px, 5px);
+}
+
+
